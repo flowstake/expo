@@ -84,17 +84,16 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 
 flowstake-expo/
 │
-├── assets/ # Assets like images and fonts
-├── components/ # Reusable React components
-├── screens/ # Application screens
-├── navigation/ # Navigation configurations
-├── services/ # API and backend service integrations
-├── utils/ # Utility functions and helpers
-├── App.js # Entry point of the application
-├── app.json # Expo configuration
-├── package.json # Project metadata and dependencies
-└── README.md # Project documentation
-
+├── assets/                 # Assets like images and fonts
+├── components/             # Reusable React components
+├── screens/                # Application screens
+├── navigation/             # Navigation configurations
+├── services/               # API and backend service integrations
+├── utils/                  # Utility functions and helpers
+├── App.js                  # Entry point of the application
+├── app.json                # Expo configuration
+├── package.json            # Project metadata and dependencies
+└── README.md               # Project documentation
 
 ---
 
