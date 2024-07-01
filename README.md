@@ -57,6 +57,8 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 - **Firebase**: For data storage.
 - **Hedera Hashgraph**: For permanent records.
 - **Ethereum**: For smart contracts.
+- **web3auth.io** - For account management
+- **IPFS** - For hash-addressible content
 
 ---
 
@@ -83,16 +85,18 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 ## Directory Structure
 ```bash
 flowstake-expo/
-│
-├── assets/                # Assets like images and fonts
-├── components/            # Reusable React components
-├── screens/               # Application screens
-├── navigation/            # Navigation configurations
-├── services/              # API and backend service integrations
-├── utils/                 # Utility functions and helpers
-├── App.js                 # Entry point of the application
+├── assets/                 # Image, video, and other static assets
+├── components/             # Reusable components
+├── config/                 # Configuration files
+├── hooks/                  # Custom hooks
+├── navigation/             # Navigation configuration
+├── screens/                # Screen components
+├── services/               # API and service files
+├── styles/                 # Styling files
+├── utils/                  # Utility functions
+├── App.js                  # Main application component
 ├── app.json                # Expo configuration
-├── package.json            # Project metadata and dependencies
+├── package.json            # Project dependencies and scripts
 └── README.md               # Project documentation
 ```
 
