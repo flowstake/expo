@@ -196,6 +196,7 @@ FlowStake aims to provide a social experience similar to Strava.
 - **Activity Feed**: View and interact with friends' activities.
 - **Friends List**: Connect with and follow other users.
 - **Challenges and Competitions**: Participate in events and compete with others.
+- **Media Storage**: Use IPFS for storing and sharing media content.
 
 ---
 
@@ -246,7 +247,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-For any further questions or support, please contact Renat Razumov at [email@example.com](mailto:email@example.com).
+For any further questions or support, please contact Renat Razumov at [flowstake@protonmail.com](flowstake@protonmail.com).
 
 ---
 
