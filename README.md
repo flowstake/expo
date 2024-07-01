@@ -81,7 +81,7 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 ---
 
 ## Directory Structure
-
+```bash
 **flowstake-expo/**
 │
 
@@ -104,7 +104,7 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 ├── **package.json**            # Project metadata and dependencies
 
 └── **README.md**               # Project documentation
-
+```
 
 ---
 
