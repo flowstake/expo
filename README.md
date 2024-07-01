@@ -84,6 +84,7 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 
 **flowstake-expo/**
 │
+
 ├── **assets**/                # Assets like images and fonts
 
 ├── **components**/            # Reusable React components
