@@ -101,14 +101,14 @@ flowstake-expo/
 ## Environment Setup
 
 Create a `.env` file at the root of the project and add the necessary environment variables:
-
+```bash
 WEB3AUTH_CLIENT_ID=your_web3auth_client_id
 FIREBASE_API_KEY=your_firebase_api_key
 FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
 FIREBASE_PROJECT_ID=your_firebase_project_id
 HEDERA_ACCOUNT_ID=your_hedera_account_id
 ETHEREUM_CONTRACT_ADDRESS=0xce723BBCa01d354B7b55a3337690707eE85b7B81
-
+```
 
 ---
 
