@@ -1,6 +1,6 @@
 // flowstake-expo/hooks/useAuth.js
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { loginWithWeb3 } from '../services/authService';
+import { loginWithWeb3, checkExistingUser } from '../services/authService';
 
 const AuthContext = createContext();
 
@@ -17,7 +17,17 @@ export const AuthProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    // Implement logic to check for an existing authenticated user
+    const initializeUser = async () => {
+      try {
+        const existingUser = await checkExistingUser();
+        if (existingUser) {
+          setUser(existingUser);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    initializeUser();
   }, []);
 
   return (
