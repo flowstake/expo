@@ -57,8 +57,7 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 - **Firebase**: For data storage.
 - **Hedera Hashgraph**: For permanent records.
 - **Ethereum**: For smart contracts.
-- **web3auth.io** - For account management
-- **IPFS** - For hash-addressible content
+- **IPFS** - For hash-addressible content.
 
 ---
 
