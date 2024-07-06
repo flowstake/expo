@@ -1,8 +1,8 @@
 // flowstake-expo/screens/ActivityScreens/ActivityDetailScreen.js
 import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const ActivityDetailScreen = ({ route, navigation }) => {
   const { activityId, activityTitle, activityDescription } = route.params;
