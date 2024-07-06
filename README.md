@@ -84,19 +84,21 @@ To start working on the FlowStake Expo project, ensure you have the following pr
 ## Directory Structure
 ```bash
 flowstake-expo/
-├── assets/                 # Image, video, and other static assets
-├── components/             # Reusable components
-├── config/                 # Configuration files
-├── hooks/                  # Custom hooks
-├── navigation/             # Navigation configuration
-├── screens/                # Screen components
-├── services/               # API and service files
-├── styles/                 # Styling files
-├── utils/                  # Utility functions
-├── App.js                  # Main application component
-├── app.json                # Expo configuration
-├── package.json            # Project dependencies and scripts
-└── README.md               # Project documentation
+├── assets/                                 # Image, video, and other static assets
+├── components/                             # Reusable components
+├── config/                                 # Configuration files
+├── hooks/                                  # Custom hooks
+├── navigation/                             # Navigation configuration
+├── screens/                                # Screen components
+├── services/                               # API and service files
+├── styles/                                 # Styling files
+├── utils/                                  # Utility functions
+├── .env                                    # Environment variables
+├── App.js                                  # Main application component
+├── app.json                                # Expo configuration
+├── babel.config.js                         # Babel configuration
+├── package.json                            # Project dependencies and scripts
+└── README.md                               # Project documentation
 ```
 ### Directory Structure Extended 
 
@@ -104,85 +106,94 @@ Here is a proposed code structure for the FlowStake Expo app:
 
 ```plaintext
 flowstake-expo/
-├── assets/                     # Image, video, and other static assets
-│   ├── icons/
-│   ├── images/
-│   └── videos/
-├── components/                 # Reusable components
-│   ├── common/                 # Common reusable components
-│   ├── auth/                   # Authentication related components
-│   ├── activity/               # Activity tracking related components
-│   ├── social/                 # Social feature components
-│   └── ...                     # Other domain-specific components
-├── config/                     # Configuration files
-│   └── firebaseConfig.js       # Firebase configuration
-│   └── hederaConfig.js         # Hedera Hashgraph configuration
-│   └── ethereumConfig.js       # Ethereum smart contract configuration
-├── hooks/                      # Custom hooks
-│   ├── useAuth.js              # Hook for authentication
-│   ├── useActivity.js          # Hook for activity tracking
-│   ├── useAttestation.js       # Hook for attestation
-│   ├── useSocial.js            # Hook for social features
-│   └── ...                     # Other custom hooks
-├── navigation/                 # Navigation configuration
-│   ├── AppNavigator.js         # Main app navigator
-│   ├── AuthNavigator.js        # Authentication navigator
-│   ├── MainNavigator.js        # Main app screens navigator
-│   └── ...                     # Other navigators
-├── screens/                    # Screen components
-│   ├── AuthScreens/            # Screens for authentication
-│   │   ├── LoginScreen.js
-│   │   ├── SignupScreen.js
-│   │   └── ...
-│   ├── ActivityScreens/        # Screens for activity tracking
-│   │   ├── StartActivityScreen.js
-│   │   ├── ActivityDetailScreen.js
-│   │   └── ...
-│   ├── SocialScreens/          # Screens for social features
-│   │   ├── FeedScreen.js
-│   │   ├── FriendsListScreen.js
-│   │   └── ...
-│   └── ...                     # Other screens
-├── services/                   # API and service files
-│   ├── authService.js          # Authentication services
-│   ├── activityService.js      # Activity tracking services
-│   ├── attestationService.js   # Attestation services
-│   ├── socialService.js        # Social feature services
-│   └── ...                     # Other services
-├── styles/                     # Styling files
-│   ├── colors.js               # Color palette
-│   ├── fonts.js                # Font styles
-│   └── globalStyles.js         # Global styles
-├── utils/                      # Utility functions
-│   ├── validators.js           # Validation functions
-│   ├── formatters.js           # Data formatting functions
-│   ├── constants.js            # Constant values
-│   └── ...                     # Other utility functions
-├── .env                        # Environment variables
-├── App.js                      # Main application component
-├── app.json                    # Expo configuration
-├── babel.config.js             # Babel configuration
-├── package.json                # Project dependencies and scripts
-└── README.md                   # Project documentation
+├── assets/                                 # Image, video, and other static assets
+│   ├── icons/                              # Icon assets
+│   ├── images/                             # Image assets
+│   └── videos/                             # Video assets
+├── components/                             # Reusable components
+│   ├── common/                             # Common reusable components
+│   │   ├── Button.js                       # Reusable Button component
+│   │   ├── Footer.js                       # Footer component
+│   │   ├── Header.js                       # Header component
+│   │   └── Input.js                        # Reusable Input component
+├── config/                                 # Configuration files
+│   ├── firebaseConfig.js                   # Firebase configuration
+│   ├── hederaConfig.js                     # Hedera Hashgraph configuration
+│   └── web3authConfig.js                   # Web3Auth configuration
+├── hooks/                                  # Custom hooks
+│   ├── useAuth.js                          # Hook for authentication
+│   ├── useActivity.js                      # Hook for activity tracking
+│   ├── useAttestation.js                   # Hook for attestation
+│   ├── useSocial.js                        # Hook for social features
+├── navigation/                             # Navigation configuration
+│   ├── AppNavigator.js                     # Main app navigator
+│   ├── AuthNavigator.js                    # Authentication navigator
+│   ├── MainNavigator.js                    # Main app screens navigator
+├── screens/                                # Screen components
+│   ├── AuthScreens/                        # Screens for authentication
+│   │   ├── LoginScreen.js                  # Login screen
+│   │   ├── SignupScreen.js                 # Signup screen
+│   ├── ActivityScreens/                    # Screens for activity tracking
+│   │   ├── ProfileScreen.js                # Profile screen
+│   │   ├── StartActivityScreen.js          # Start activity screen
+│   │   ├── ActivityDetailScreen.js         # Activity detail screen
+│   ├── SocialScreens/                      # Screens for social features
+│   │   ├── FeedScreen.js                   # Social feed screen
+│   │   ├── FriendsListScreen.js            # Friends list screen
+│   ├── HomeScreen.js                       # Home screen
+├── services/                               # API and service files
+│   ├── activityService.js                  # Activity tracking services
+│   ├── attestationService.js               # Attestation services
+│   ├── authService.js                      # Authentication services
+│   ├── socialService.js                    # Social feature services
+├── styles/                                 # Styling files
+│   ├── colors.js                           # Color palette
+│   ├── fonts.js                            # Font styles
+│   └── globalStyles.js                     # Global styles
+├── utils/                                  # Utility functions
+│   ├── validators.js                       # Validation functions
+│   ├── formatters.js                       # Data formatting functions
+│   ├── constants.js                        # Constant values
+├── .env                                    # Environment variables
+├── App.js                                  # Main application component
+├── app.json                                # Expo configuration
+├── babel.config.js                         # Babel configuration
+├── package.json                            # Project dependencies and scripts
+└── README.md                               # Project documentation
 ```
 
 ### Explanation:
 
-- **assets/**: Contains static assets like images, icons, and videos.
-- **components/**: Reusable components categorized by their domain (e.g., common, auth, activity, social).
-- **config/**: Configuration files for Firebase, Hedera Hashgraph, Ethereum, and other settings.
-- **hooks/**: Custom hooks for handling various logic and state management.
-- **navigation/**: Navigation setup using React Navigation, with separate navigators for authentication and main app flow.
-- **screens/**: Screen components categorized by their functionality (e.g., authentication screens, activity tracking screens, social feature screens).
-- **services/**: API and service files for handling network requests and business logic.
-- **styles/**: Styling files, including color palettes, font styles, and global styles.
-- **utils/**: Utility functions for validations, data formatting, constants, and more.
-- **.env**: Environment variables for configuration.
-- **App.js**: Main application component.
-- **app.json**: Expo configuration file.
-- **babel.config.js**: Babel configuration file.
-- **package.json**: Project dependencies and scripts.
-- **README.md**: Project documentation.
+- **assets/**:  
+  Contains static assets like images, icons, and videos.
+- **components/**:  
+  Reusable components categorized by their domain (e.g., common, auth, activity, social).
+- **config/**:  
+  Configuration files for Firebase, Hedera, Web3Auth, and other services.
+- **hooks/**:  
+  Custom hooks for authentication, activity tracking, attestation, and social features.
+- **navigation/**:  
+  Navigation configuration, including main, authentication, and app navigators.
+- **screens/**:  
+  Screen components, organized by functionality (authentication, activity tracking, social features, home).
+- **services/**:  
+  API and service files for authentication, activity tracking, attestation, and social features.
+- **styles/**:  
+  Styling files, including global styles, color palette, and font styles.
+- **utils/**:  
+  Utility functions such as validators, data formatters, and constants.
+- **.env**:  
+  Environment variables.
+- **App.js**:  
+  Main application component.
+- **app.json**:  
+  Expo configuration.
+- **babel.config.js**:  
+  Babel configuration.
+- **package.json**:  
+  Project dependencies and scripts.
+- **README.md**:  
+  Project documentation.
 
 ---
 
