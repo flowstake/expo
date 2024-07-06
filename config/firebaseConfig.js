@@ -1,18 +1,22 @@
+// flowstake-expo/config/firebaseConfig.js
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID,
+  apiKey: 'your-api-key',
+  authDomain: 'your-auth-domain',
+  projectId: 'your-project-id',
+  storageBucket: 'your-storage-bucket',
+  messagingSenderId: 'your-messaging-sender-id',
+  appId: 'your-app-id',
 };
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
 
-export default firebase;
+const firestore = firebase.firestore();
+const auth = firebase.auth();
+
+export { firebase, firestore, auth };
