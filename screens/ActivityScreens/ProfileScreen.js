@@ -2,6 +2,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, Button } from 'react-native';
 import { useAuth } from '../../hooks/useAuth';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 export default function ProfileScreen() {
   const { user, setUser } = useAuth();
@@ -13,15 +15,19 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <View style={styles.profileContainer}>
-        <Image
-          source={{ uri: user?.photoURL || 'https://via.placeholder.com/150' }}
-          style={styles.profileImage}
-        />
-        <Text style={styles.profileName}>{user?.displayName || 'User Name'}</Text>
-        <Text style={styles.profileEmail}>{user?.email || 'user@example.com'}</Text>
+      <Header title="Profile" />
+      <View style={styles.content}>
+        <View style={styles.profileContainer}>
+          <Image
+            source={{ uri: user?.photoURL || 'https://via.placeholder.com/150' }}
+            style={styles.profileImage}
+          />
+          <Text style={styles.profileName}>{user?.displayName || 'User Name'}</Text>
+          <Text style={styles.profileEmail}>{user?.email || 'user@example.com'}</Text>
+        </View>
+        <Button title="Logout" onPress={handleLogout} />
       </View>
-      <Button title="Logout" onPress={handleLogout} />
+      <Footer />
     </View>
   );
 }
@@ -29,10 +35,13 @@ export default function ProfileScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#f5f5f5',
+  },
+  content: {
+    flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#f5f5f5',
   },
   profileContainer: {
     alignItems: 'center',
