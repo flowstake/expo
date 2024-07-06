@@ -1,0 +1,47 @@
+{
+    "expo": {
+      "name": "FlowStake",
+      "slug": "flowstake",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icons/app-icon.png",
+      "splash": {
+        "image": "./assets/images/splash.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      },
+      "updates": {
+        "fallbackToCacheTimeout": 0
+      },
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTablet": true,
+        "bundleIdentifier": "com.yourcompany.flowstake",
+        "config": {
+          "googleSignIn": {
+            "reservedClientId": "your-ios-reversed-client-id"
+          }
+        }
+      },
+      "android": {
+        "package": "com.yourcompany.flowstake",
+        "googleServicesFile": "./google-services.json",
+        "config": {
+          "googleSignIn": {
+            "certificateHash": "your-android-certificate-hash"
+          }
+        }
+      },
+      "web": {
+        "favicon": "./assets/icons/favicon.png"
+      },
+      "extra": {
+        "eas": {
+          "projectId": "your-project-id"
+        }
+      }
+    }
+  }
+  
