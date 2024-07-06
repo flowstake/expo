@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+      "@web3auth/react-native-sdk": "^1.0.0",
+      "@web3auth/base": "^1.0.0"
+    }
+  }
+  
