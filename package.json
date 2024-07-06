@@ -16,7 +16,7 @@
       "@web3auth/react-native-sdk": "7.0.0",
       "expo": "51.0.18",
       "expo-status-bar": "~1.12.1",
-      "expo/metro-runtime": "3.2.1",
+      "expo-dev-client": "^2.0.0",
       "firebase": "10.12.3",
       "react": "18.2.0",
       "react-dom": "18.2.0",
