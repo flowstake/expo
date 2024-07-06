@@ -164,36 +164,21 @@ flowstake-expo/
 
 ### Explanation:
 
-- **assets/**:  
-  Contains static assets like images, icons, and videos.
-- **components/**:  
-  Reusable components categorized by their domain (e.g., common, auth, activity, social).
-- **config/**:  
-  Configuration files for Firebase, Hedera, Web3Auth, and other services.
-- **hooks/**:  
-  Custom hooks for authentication, activity tracking, attestation, and social features.
-- **navigation/**:  
-  Navigation configuration, including main, authentication, and app navigators.
-- **screens/**:  
-  Screen components, organized by functionality (authentication, activity tracking, social features, home).
-- **services/**:  
-  API and service files for authentication, activity tracking, attestation, and social features.
-- **styles/**:  
-  Styling files, including global styles, color palette, and font styles.
-- **utils/**:  
-  Utility functions such as validators, data formatters, and constants.
-- **.env**:  
-  Environment variables.
-- **App.js**:  
-  Main application component.
-- **app.json**:  
-  Expo configuration.
-- **babel.config.js**:  
-  Babel configuration.
-- **package.json**:  
-  Project dependencies and scripts.
-- **README.md**:  
-  Project documentation.
+- **assets/**: Contains static assets like images, icons, and videos.
+- **components/**: Reusable components categorized by their domain (e.g., common, auth, activity, social).
+- **config/**: Configuration files for Firebase, Hedera, Web3Auth, and other services.
+- **hooks/**: Custom hooks for authentication, activity tracking, attestation, and social features.
+- **navigation/**: Navigation configuration, including main, authentication, and app navigators.
+- **screens/**: Screen components, organized by functionality (authentication, activity tracking, social features, home).
+- **services/**: API and service files for authentication, activity tracking, attestation, and social features.
+- **styles/**: Styling files, including global styles, color palette, and font styles.
+- **utils/**: Utility functions such as validators, data formatters, and constants.
+- **.env**: Environment variables.
+- **App.js**: Main application component.
+- **app.json**: Expo configuration.
+- **babel.config.js**: Babel configuration.
+- **package.json**: Project dependencies and scripts.
+- **README.md**: Project documentation.
 
 ---
 
